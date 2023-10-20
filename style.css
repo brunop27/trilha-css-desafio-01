@@ -1,0 +1,107 @@
+/* Declarando variáveis para cor */
+:root{
+    --wht: #dadada;
+
+}
+
+/* Resetando as configurações padrões */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;;
+}
+
+/* Colocando cor um pouco mais opaca em todo o corpo do elemento para ajudar em alguns efeitos de background */
+body,html{
+    background-color: rgb(49, 49, 49);
+
+}
+
+
+/* Formato geral das tag */
+div{
+    display: block;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+/* Configuração para o HEADER da página, adicionando fundo, largura e altura */
+.banner{
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url(assets/images/banner.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 2.5rem;
+    border-bottom: 3px solid #33A8DB80;
+}
+
+/* Centralizando os texto do banner, adicionando cor e tamanho */
+.banner .banner-content{
+    text-align: center;
+    color: var(--wht);
+    margin: auto;
+    width: 50rem;
+}
+
+/* Formatando a logo, adicionando um background para efeito da imagem */
+.banner-content .logo{
+    background-color: rgba(0, 0, 0, .5);
+    height: 245px;
+    width: 260px;
+    margin: 1.5rem auto;
+    border-radius: 50%;
+    padding: 0.7rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+/* Estilo do H1 do HEADER */
+.banner h1 {
+    margin: 1rem auto;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: transparent;
+    background: -webkit-linear-gradient(#33A8DB, #1472B7);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+/* Formatando o texto apresentando no HEADER */
+.banner p {
+    font-size: 1.25rem;
+    margin: 2rem auto;
+
+}
+
+/* Formatando o botão no HEADER */
+.banner .banner-content button {
+    color: #31A8DD;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 16px 32px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background-color: transparent;
+    border-image: linear-gradient(#3BA1CD, #1572B7);
+    border-image-slice: 10;
+    border-radius: 30px;
+}
